@@ -16,7 +16,7 @@ const ContactSection = () => {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -91,7 +91,51 @@ const ContactSection = () => {
               </div>
               <div>
                 <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1.5 block">Product Requirement</label>
-                <input name="product" value={formData.product} onChange={handleChange} className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors" />
+                <select 
+                  name="product" 
+                  value={formData.product} 
+                  onChange={handleChange} 
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors"
+                >
+                  <option value="">Select Category</option>
+                  <optgroup label="Main Yarn Categories">
+                    <option value="100% Cotton Yarns">100% Cotton Yarns</option>
+                    <option value="100% GIZA, SUPIMA Yarns">100% GIZA, SUPIMA Yarns</option>
+                    <option value="100% Polyester Spun and Filament Yarns">100% Polyester Spun and Filament Yarns</option>
+                    <option value="100% Tencel Yarns">100% Tencel Yarns</option>
+                    <option value="100% Modal Yarns">100% Modal Yarns</option>
+                    <option value="100% Viscose Yarns">100% Viscose Yarns</option>
+                    <option value="100% Sorona Filament Yarns">100% Sorona Filament Yarns</option>
+                    <option value="100% Bamboo Spun Yarns">100% Bamboo Spun Yarns</option>
+                    <option value="100% Linen Yarns">100% Linen Yarns</option>
+                    <option value="Contamination Free Yarns">Contamination Free Yarns</option>
+                    <option value="CMIA Yarns">CMIA Yarns</option>
+                    <option value="Cotton Lycra Core Spun Yarns">Cotton Lycra Core Spun Yarns</option>
+                    <option value="Polyester Lycra Air Covered Yarn">Polyester Lycra Air Covered Yarn</option>
+                  </optgroup>
+                  <optgroup label="Blended Yarn Categories">
+                    <option value="Cotton Blended Yarns">Cotton Blended Yarns</option>
+                    <option value="GIZA Blended Yarns">GIZA Blended Yarns</option>
+                    <option value="SUPIMA Blended Yarns">SUPIMA Blended Yarns</option>
+                    <option value="Polyester Blended Yarns">Polyester Blended Yarns</option>
+                    <option value="Tencel Blended Yarns">Tencel Blended Yarns</option>
+                    <option value="Modal Blended Yarns">Modal Blended Yarns</option>
+                    <option value="Viscose Blended Yarns">Viscose Blended Yarns</option>
+                    <option value="Sorona Blended Spun Yarns">Sorona Blended Spun Yarns</option>
+                    <option value="Bamboo Blended Yarns">Bamboo Blended Yarns</option>
+                    <option value="Linen Blended Yarns">Linen Blended Yarns</option>
+                  </optgroup>
+                  <optgroup label="Specialty Yarn Types">
+                    <option value="Recycled Polyester Yarn (rPET)">Recycled Polyester Yarn (rPET)</option>
+                    <option value="Slub Yarns">Slub Yarns</option>
+                    <option value="TFO / RD / Elitwist Yarns">TFO / RD / Elitwist Yarns</option>
+                    <option value="High Twist Yarns">High Twist Yarns</option>
+                    <option value="Gas Mechanized Yarns">Gas Mechanized Yarns</option>
+                    <option value="Paralleled Yarns">Paralleled Yarns</option>
+                    <option value="Flax Multiply Yarns">Flax Multiply Yarns</option>
+                  </optgroup>
+                  <option value="Other">Other Requirement</option>
+                </select>
               </div>
             </div>
             <div>

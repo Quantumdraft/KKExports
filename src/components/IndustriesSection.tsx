@@ -100,7 +100,7 @@ const IndustriesSection = () => {
               className={`relative group h-[350px] rounded-[2rem] overflow-hidden cursor-pointer shadow-xl ${ind.size}`}
             >
               {/* Image Background */}
-              <div className="absolute inset-0 transition-transform duration-[1.5s] ease-out group-hover:scale-110">
+              <div className="absolute inset-0 transition-transform duration-[1500ms] ease-out group-hover:scale-110">
                 <img 
                   src={ind.img} 
                   alt={ind.label} 
