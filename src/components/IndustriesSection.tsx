@@ -103,7 +103,7 @@ const IndustriesSection = () => {
               <div className="absolute inset-0 transition-transform duration-[1500ms] ease-out group-hover:scale-110">
                 <img 
                   src={ind.img} 
-                  alt={ind.label} 
+                  alt={`${ind.label} Applications - Premium Yarn by KK Exports`} 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1a1814] via-transparent to-transparent opacity-70 transition-opacity duration-700"></div>

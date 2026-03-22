@@ -12,7 +12,7 @@ const badges = [
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center overflow-hidden">
     <div className="absolute inset-0">
-      <img src={heroBg} alt="Premium textile yarn cones" className="w-full h-full object-cover" />
+      <img src={heroBg} alt="Premium textile yarn cones for global export - KK Exports" className="w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-r from-card/95 via-card/80 to-card/40" />
     </div>
     <div className="container mx-auto relative z-10 px-4 pt-24 pb-16">

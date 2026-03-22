@@ -442,7 +442,7 @@ const ProductsSection = () => {
                   <div className="relative group overflow-hidden rounded-3xl mb-6 aspect-[4/5] gold-shadow-lg border border-gold/10">
                     <img 
                       src={cat.image} 
-                      alt={cat.title} 
+                      alt={`${cat.title} - Textile Yarn Collections | KK Exports`} 
                       className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>

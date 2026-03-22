@@ -72,7 +72,7 @@ const QualitySection = () => {
 
                     <img 
                       src={qualitySeal} 
-                      alt="Quality Seal" 
+                      alt="KK Exports Quality Assurance Seal - Premium Yarn Export Grade" 
                       className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-10 drop-shadow-[0_0_15px_rgba(197,161,126,0.3)] group-hover:scale-105 transition-transform duration-700" 
                     />
 
