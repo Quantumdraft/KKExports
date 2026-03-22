@@ -1,3 +1,5 @@
+import logo from "../assets/logo.png";
+
 const productLinks = [
   "Main Yarns", "Blended Yarns", "Specialty Yarns",
 ];
@@ -15,11 +17,10 @@ const Footer = () => (
     <div className="container mx-auto px-4 py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
-          <h3 className="font-serif text-xl font-bold gold-gradient-text mb-4">KK Exports</h3>
+          <img src={logo} alt="KK Exports" className="h-16 md:h-20 w-auto mb-6 object-contain" />
           <p className="text-sm opacity-70 leading-relaxed mb-4">
             Premium yarn export company delivering quality, consistency, and reliability to global textile markets.
           </p>
-          <p className="text-xs opacity-50">KK Exports</p>
         </div>
         <div>
           <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-gold-light">Quick Links</h4>

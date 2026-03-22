@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import logo from "../assets/logo.png";
+
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Products", href: "#products" },
@@ -17,8 +19,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
-        <a href="#" className="font-serif text-xl md:text-2xl font-bold gold-gradient-text tracking-wide">
-          KK Exports
+        <a href="#" className="flex items-center py-2">
+          <img src={logo} alt="KK Exports" className="h-12 md:h-14 w-auto object-contain" />
         </a>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (
