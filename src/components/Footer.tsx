@@ -17,7 +17,11 @@ const Footer = () => (
     <div className="container mx-auto px-4 py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
-          <img src={logo} alt="KK Exports" className="h-16 md:h-20 w-auto mb-6 object-contain" />
+          <img 
+            src={logo} 
+            alt="KK Exports" 
+            className="h-24 md:h-32 w-auto mb-6 object-contain brightness-110 contrast-110 drop-shadow-lg opacity-90 hover:opacity-100 transition-opacity" 
+          />
           <p className="text-sm opacity-70 leading-relaxed mb-4">
             Premium yarn export company delivering quality, consistency, and reliability to global textile markets.
           </p>

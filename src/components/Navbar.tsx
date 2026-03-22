@@ -19,8 +19,15 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
-        <a href="#" className="flex items-center py-2">
-          <img src={logo} alt="KK Exports" className="h-12 md:h-14 w-auto object-contain" />
+        <a href="#" className="flex items-center gap-3 py-1">
+          <img 
+            src={logo} 
+            alt="KK Exports Logo" 
+            className="h-10 md:h-12 w-auto object-contain brightness-110 contrast-110 drop-shadow-sm" 
+          />
+          <span className="font-serif text-lg md:text-xl font-bold gold-gradient-text tracking-wide whitespace-nowrap">
+            KK Exports
+          </span>
         </a>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((l) => (
