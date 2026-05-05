@@ -23,7 +23,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const whatsappNumber = "918438809864";
     const text = `*New Business Enquiry - KK Exports*\n\n` +
       `*Name:* ${formData.name}\n` +
@@ -33,10 +33,10 @@ const ContactSection = () => {
       `*Country:* ${formData.country || "N/A"}\n` +
       `*Product:* ${formData.product || "N/A"}\n` +
       `*Message:* ${formData.message || "N/A"}`;
-    
+
     const encodedText = encodeURIComponent(text);
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedText}`, "_blank");
-    
+
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
   };
@@ -91,10 +91,10 @@ const ContactSection = () => {
               </div>
               <div>
                 <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1.5 block">Product Requirement</label>
-                <select 
-                  name="product" 
-                  value={formData.product} 
-                  onChange={handleChange} 
+                <select
+                  name="product"
+                  value={formData.product}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors"
                 >
                   <option value="">Select Category</option>
@@ -163,7 +163,7 @@ const ContactSection = () => {
                   <Mail size={18} className="text-gold mt-0.5" />
                   <div>
                     <p className="text-xs text-muted-foreground uppercase tracking-wider mb-0.5">Email</p>
-                    <a href="mailto:exports@kktraders.com" className="text-sm font-medium text-foreground hover:text-gold transition-colors">exports@kktraders.com</a>
+                    <a href="mailto:exports@kktraders.com" className="text-sm font-medium text-foreground hover:text-gold transition-colors">Exports03@kkexports.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">

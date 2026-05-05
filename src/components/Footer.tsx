@@ -17,10 +17,10 @@ const Footer = () => (
     <div className="container mx-auto px-4 py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
-          <img 
-            src={logo} 
-            alt="KK Exports" 
-            className="h-24 md:h-32 w-auto mb-6 object-contain brightness-110 contrast-110 drop-shadow-lg opacity-90 hover:opacity-100 transition-opacity" 
+          <img
+            src={logo}
+            alt="KK Exports"
+            className="h-24 md:h-32 w-auto mb-6 object-contain brightness-110 contrast-110 drop-shadow-lg opacity-90 hover:opacity-100 transition-opacity"
           />
           <p className="text-sm opacity-70 leading-relaxed mb-4">
             Premium yarn export company delivering quality, consistency, and reliability to global textile markets.
@@ -53,7 +53,7 @@ const Footer = () => (
         <div>
           <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-gold-light">Contact</h4>
           <div className="space-y-2 text-sm opacity-70">
-            <p><a href="mailto:exports@kktraders.com" className="hover:text-gold transition-colors">exports@kktraders.com</a></p>
+            <p><a href="mailto:exports@kktraders.com" className="hover:text-gold transition-colors">Exports03@kkexports.com</a></p>
             <p><a href="tel:+918438809864" className="hover:text-gold transition-colors">+91 84388 09864</a></p>
             <p>No - 100 E, Balaji Nagar 2, V V School Opp,<br />Dharapuram Road, Muthanampalayam,<br />Tiruppur, Tamil Nadu - 641606</p>
             <p className="text-xs mt-2 text-white font-bold opacity-70 tracking-wide">GST NO: 33QSTPK3941K1ZV</p>
